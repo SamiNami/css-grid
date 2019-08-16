@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Css Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+
+            grid-gap: 1em;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em,
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam rerum, autem repellat quae provident natus debitis cum animi odit eveniet voluptate hic esse tempora a, iure in fuga ipsum commodi quasi numquam aliquam adipisci facilis alias. Doloremque, distinctio dignissimos tempora ducimus totam architecto, sint laboriosam nam enim, aut excepturi? Aperiam obcaecati rerum qui ut iure accusantium, quae molestiae. Nostrum excepturi hic ea eos odio doloribus aliquid, iusto, architecto ratione saepe rem assumenda? Numquam, minima cum vitae inventore necessitatibus maxime.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id modi fuga vel non! Debitis eaque vero nostrum aut quibusdam tempore voluptatum aliquid sunt reprehenderit nihil, ipsum, non eligendi repellat!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam rerum, autem repellat quae provident natus
+            debitis cum animi odit eveniet voluptate hic esse tempora a, iure in fuga ipsum commodi quasi numquam aliquam
+            adipisci facilis alias. Doloremque, distinctio dignissimos tempora ducimus totam architecto, sint laboriosam nam
+            enim, aut excepturi? Aperiam obcaecati rerum qui ut iure accusantium, quae molestiae. Nostrum excepturi hic ea eos
+            odio doloribus aliquid, iusto, architecto ratione saepe rem assumenda? Numquam, minima cum vitae inventore
+            necessitatibus maxime.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id modi fuga vel non! Debitis eaque vero nostrum
+            aut quibusdam tempore voluptatum aliquid sunt reprehenderit nihil, ipsum, non eligendi repellat!
+        </div>
+    </div>
+
+</body>
+
+</html>

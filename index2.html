@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+          .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px;   set the height of the child divs */
+            grid-auto-rows: minmax(100px, auto); /* min 100px height but will follow the height of the content, for that row */
+
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* divide up the colums into 3 1fraction fractions */
+            grid-auto-rows: 70px;
+            grid-gap:1em;
+        }
+
+        .nested > div {
+            border: #3333 1px solid;
+            padding: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum rem praesentium quo labore neque officiis possimus, explicabo tempora soluta fugiat fuga illo, aut porro corrupti accusamus voluptates nostrum molestias facilis non. Minima excepturi ipsam facere id error, fugit voluptatem autem corrupti totam ea asperiores necessitatibus iure sit sapiente ipsa ducimus. Cum laboriosam quisquam accusantium! Vitae reprehenderit eos laudantium nesciunt dolore ad, dicta in officia quasi, odit velit eligendi rerum qui beatae impedit repudiandae voluptas officiis excepturi commodi totam ut!</div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+
+</html>
